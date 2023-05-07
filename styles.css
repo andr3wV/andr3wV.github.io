@@ -5,7 +5,7 @@
   --gray: rgba(234, 241, 248, 1);
   --black: #05051e;
   --cyan: #88FCFC;
-  --yellow: #99b2dd;
+  --yellow: #28AFB0;
   --red: #fe6571;
   
   --grey: #e0e0e0;
@@ -722,7 +722,7 @@ div.project-skills {
 }
 
 #contact-links>a>i {
-  color: var(--yellow);
+  color: var(--gray);
   margin-right: 1vw; /* Add this line to space out the icons */
 
   font-size: 10vh; /* Change the value to your desired size */
