@@ -12,7 +12,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Update README
       run: |
-        DATE_TIME=$(git log -1 --format="%cd" --date=iso-strict) # Changed date format
+        DATE=$(git log -1 --format="%cd" --date=iso-strict)
+        DATE_TIME=$(date -d "$DATE" +"%b %e, %Y at %l:%M%p")
         sed -i "s/Last change: .*/Last change: $DATE_TIME/" README.md
     - name: Commit and push changes
       run: |
