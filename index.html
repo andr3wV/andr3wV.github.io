@@ -381,22 +381,44 @@
       // Get the element with id="defaultOpen" and click on it
       document.getElementById("defaultOpen").click();
 
+      /* Typewriter effect for tagline */
       var taglines = [
-        "a full stack developer",
-        "a travel enthusiast",
-        "an eternal student",
-        "\"a handsome young man\" — my grandma"
-      ];
-      var tagline_counter = 0;
-      var tag = document.getElementById("tagline-div");
-      setInterval(change_tagline, 1500);
+            "a full stack developer",
+            "a travel enthusiast",
+            "\"a handsome young man\" — my grandma"
+        ];
+        var tagline_counter = 0;
+        var tag = document.getElementById("tagline-div");
+        var typing_speed = 100;
+        var deleting_speed = 50;
+        var pause_duration = 1500;
 
-      function change_tagline() {
-        tag.innerHTML = taglines[tagline_counter];
-        tagline_counter++;
+        function typeTagline() {
+            var current_tagline = taglines[tagline_counter];
+            var current_length = tag.innerHTML.length;
 
-        if (tagline_counter >= taglines.length) { tagline_counter = 0; }
-      }
+            if (current_length < current_tagline.length) {
+                tag.innerHTML += current_tagline[current_length];
+                setTimeout(typeTagline, typing_speed);
+            } else {
+                setTimeout(deleteTagline, pause_duration);
+            }
+        }
+
+        function deleteTagline() {
+            var current_length = tag.innerHTML.length;
+
+            if (current_length > 0) {
+                tag.innerHTML = tag.innerHTML.slice(0, -1);
+                setTimeout(deleteTagline, deleting_speed);
+            } else {
+                tagline_counter++;
+                if (tagline_counter >= taglines.length) { tagline_counter = 0; }
+                setTimeout(typeTagline, typing_speed);
+            }
+        }
+
+        typeTagline();
     </script>
 
   </div> <!-- end of portofolio pages -->
