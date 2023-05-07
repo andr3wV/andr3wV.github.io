@@ -84,6 +84,8 @@ img.icon {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: 27%;
 }
 
 .main-name-div>h1.my-name {
