@@ -251,6 +251,15 @@ nav.nav-bar {
 #house-icon {
   color: var(--gray);
 }
+.logo-icon {
+  background-image: url('assets/logo.png');
+  background-size: contain;
+  width: 1.5em;
+  height: 1.5em;
+  display: inline-block;
+  font-size: 4.5em;
+}
+
 
 
 /*////////////////////*/
