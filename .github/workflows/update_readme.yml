@@ -3,7 +3,7 @@ name: Update README
 on:
   push:
     branches:
-      - main
+      - main # Change this to your default branch if not 'main'
 
 jobs:
   build:
@@ -12,12 +12,13 @@ jobs:
     - uses: actions/checkout@v2
     - name: Update README
       run: |
-        DATE=$(git log -1 --format="%cd" --date=short)
-        sed -i "s/Last change: .*/Last change: $DATE/" README.md
+        DATE_TIME=$(git log -1 --format="%cd" --date=iso-strict) # Changed date format
+        sed -i "s/Last change: .*/Last change: $DATE_TIME/" README.md
     - name: Commit and push changes
       run: |
         git config --global user.name "GitHub Action"
         git config --global user.email "action@github.com"
         git add README.md
-        git diff --quiet && git diff --staged --quiet || git commit -m "Update README with latest commit date"
+        git diff --quiet && git diff --staged --quiet || git commit -m "Update README with latest commit date and time"
+        git remote set-url origin https://x-access-token:${{ secrets.UPDATE_README_PAT }}@github.com/andr3wV/andr3wV.github.io.git
         git push
