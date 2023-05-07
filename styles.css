@@ -165,107 +165,6 @@ h1.my-name {
 }
 
 /*////////////////////*/
-/*////TETRIS PAGE/////*/
-/*////////////////////*/
-/*////////////////////*/
-
-.tetris-page-contents {
-  width: 100vw;
-  height: 100vh;
-  font-family: 'Press Start 2P';
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  overflow-y: hidden;
-}
-
-.tetris-grid {
-  display: grid;
-  grid-template-columns: 280px 175px;
-  align-items: bottom;
-  height: 504px; /* tetris game height */
-  padding-top: 15vh;
-}
-
-
-.right-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%
-}
-
-#board {
-  border: solid 0.3vh;
-  border-color: var(--black);
-}
-
-.game-stats,
-#score,
-#lines,
-#level {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 1.5vh;
-  color: var(--black);
-  padding-bottom: 0.8vh;
-}
-
-.leaderboard-button {
-  background-color: #84a4fc;
-  font-family: 'Press Start 2P', curisve;
-  font-size: 1.3vh;
-  padding: 0.7vw;
-}
-
-#tetris-page-my-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 504px; /* tetris game height */
-  padding-top: 15vh;
-  padding-left: 2vw;
-}
-
-
-#columned-menu-buttons {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  align-items: end;
-  justify-content: right;
-}
-
-#columned-menu-buttons>a {
-  padding: 50px 10px 0px 0px;
-  font-size: 35px;
-}
-
-#tetris-page-file-icon {
-  position: relative;
-  right: 0.4vw;
-}
-
-#tetris-page-cave-icon {
-  position: relative;
-  left: 0.7vw;
-  bottom: 0.5vh;
-}
-
-#columned-menu-buttons,
-.tetris-name-div {
-  background-color: rgba(234, 241, 248, 1);
-  justify-items: right;
-}
-
-.tetris-name-div>h1.tetris-name {
-  font-family: 'Press Start 2P';
-  font-size: 2.5vw;
-}
-#tetris-footer-source {
-  color: var(--black);
-}
-
-/*////////////////////*/
 /*////////////////////*/
 /*//PORTFOLIO PAGES///*/
 /*////////////////////*/
@@ -280,8 +179,15 @@ a.in-line-link {
 }
 
 .portfolio-section-title {
-  font-size: 3.4vh;;
+  font-size: 3.4vh;
   font-weight: 500;
+}
+
+.portfolio-section-title2 {
+  font-size: 3.4vh;
+  font-weight: 500;
+  color: white !important;
+
 }
 
 .subtitle {
@@ -740,113 +646,4 @@ div.project-skills {
 
 #get-in-touch > .credits > p > a {
   color: white;
-}
-
-/*////////////////////*/
-/*//////PROJECTS//////*/
-/*////////////////////*/
-#cave-pages-wrapper {
-  width: 100vw;
-  height: max-content;
-}
-.cave-pages > * {
-  font-size: 1vw;
-  border: none;
-}
-.vertical-nav-bar{
-  position: fixed;
-  right: 0;
-  height: 100%;
-  width: 20vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.cave-nav-div > * {
-  font-size: 5vh;
-}
-
-.cave-nav-div{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-
-  width: 100%;
-  max-height: 20vh;
- 
-  padding: 5vh;
-}
-
-.cave-more-articles{
-  padding-bottom: 3vh;
-  font-size: 130%
-}
-
-.cave-articles-list > button{ 
-  text-decoration: underline;
-  text-decoration-color: none;
-  border: none;
-}
-
-
-#feature-article {
-  display: flex;
-  height: 300vh;
-  width: 90%;
-  border: none;
-  position: relative;
-  top: 15vh;
-  left: 4vw;
-}
-
-#placeholder {
-  width: 80vw;
-  position: absolute;
-  border: none;
-  min-height: 200vh;
-
-}
-.cave-nav-bar-buttons{
-  width: 100%;
-  height: 25%;
-  padding-top: 5vh;
-  font-size: 1.5vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  justify-items: center;
-}
-
-.cave-article-content-div{
-  width: 80%;
-  justify-items: center;
-  padding: 3vh;
-}
-
-.cave-article-content-div > * {
-  padding-bottom: 2vh;
-}
-
-.cave-article-title {
-  font-size: 3vw;
-}
-.date-author {
-  font-size: 0.8vh;
-}
-.article-text > *{
-  font-size: 100%;
-}
-
-.article-text > li {
-  padding-bottom: 1vh;
-}
-
-.cave-img-div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 30px;
-}
-figcaption.cave-figcpation{
-  font-size: 0.2vh;
 }
