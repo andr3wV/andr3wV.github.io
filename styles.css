@@ -656,3 +656,29 @@ div.project-skills {
 #get-in-touch > .credits > p > a {
   color: white;
 }
+
+/*////////////////////*/
+/*//////SCROLLING//////*/
+/*////////////////////*/
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s, transform 1.5s;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1.5s, transform 1.5s;
+}
+
+.slide-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
