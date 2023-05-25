@@ -35,7 +35,12 @@
   <meta name="msapplication-wide310x150logo" content="assets/favicomatic/mstile-310x150.png" />
   <meta name="msapplication-square310x310logo" content="assets/favicomatic/mstile-310x310.png" />
 </head>
-
+<style>
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+</style>
 <body>
 
   <script>
@@ -56,7 +61,7 @@
           </a>
         </div>
         <div id="portfolio-links">
-          <a class="nav-link" href=#about-me-catchphrase>About</a>
+          <a class="nav-link" href=#about-me-description>About</a>
           <a class="nav-link" href=#tools-skills>Skills</a>
           <a class="nav-link" href=#experience>Experience</a>
           <a class="nav-link" href=#projects>Projects</a>
@@ -70,18 +75,17 @@
       <div class="gradient-black-bg">
         <div class = "gradient"></div>
       </div>
-
-      <div id="about-me-catchphrase">
-        <div class="main-name-div">
-          <h1 class="my-name">Andrew Vittiglio</h1><br>
-        </div>
-        <div id="adjectives-div">
-          <div id="tagline-div" class="one-line-description"></div>
+      <div id="home">
+        <div class="name-and-description-wrapper">
+          <div class="main-name-div">
+            <h1 class="my-name">Andrew Vittiglio</h1>
+          </div>
+          <div id="tagline-div"></div>
         </div>
         <div class="horizontal-menu-buttons fade-in" id="horizontal-menu-buttons">
           <a href="https://drive.google.com/uc?id=1KzwrLxIH8tzbU4kB_IvQhZT3h1z5scM5&export=download" 
             download="AndrewVittiglio_resume" target="_blank">
-            <i class="fa-solid fa-file pop-up"></i>
+            <i class="fa-solid fa-file pop-up2"></i>
           </a>
           <a href="https://linkedin.com/in/andr3wV" target = "_blank">
             <i class="fa-brands fa-linkedin pop-up"></i>
@@ -119,57 +123,75 @@
 
       <div id="tools-skills" class="">
         <div class="section-title-div slide-in-left">
-          <h2 class="portfolio-section-title text-align-left">Tools and Skills</h2>
+          <h2 class="portfolio-section-title text-align-left">Skills</h2>
         </div>
         <div id="skills-icons">
           <div id="cs-skills">
-
-            <div class="skills-icon-bg advanced slide-in-left">
-              <img class="skills-icon-img"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="50">
-              <p class="skills-description advanced"><span>JavaScript</span></p>
+            <div class = pop-up>
+              <div class="skills-icon-bg advanced slide-in-left">
+                <img class="skills-icon-img"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="50">
+                <p class="skills-description advanced"><span>JavaScript</span></p>
+              </div>
             </div>
-            <div class="skills-icon-bg advanced slide-in-left">
-              <img class="skills-icon-img" src="./assets/nodeJs.png" width="50">
-              <p class="skills-description advanced"><span>NodeJS</span></p>
+            <div class = pop-up>
+              <div class="skills-icon-bg advanced slide-in-left">
+                <img class="skills-icon-img" src="./assets/nodeJs.png" width="50">
+                <p class="skills-description advanced"><span>NodeJS</span></p>
+              </div>
             </div>
-            <div class="skills-icon-bg intermediate fade-in">
-              <img class="skills-icon-img" src="./assets/java.png" width="50">
-              <p class="skills-description intermediate"><span>Java</span></p>
+            <div class = pop-up>
+              <div class="skills-icon-bg intermediate fade-in">
+                <img class="skills-icon-img" src="./assets/java.png" width="50">
+                <p class="skills-description intermediate"><span>Java</span></p>
+              </div>
             </div>
-            <div class="skills-icon-bg intermediate slide-in-right">
-              <img class="skills-icon-img" src="./assets/aws.png" width="50">
-              <p class="skills-description intermediate"><span>AWS S3</span></p>
+            <div class = pop-up>
+              <div class="skills-icon-bg intermediate slide-in-right">
+                <img class="skills-icon-img" src="./assets/aws.png" width="50">
+                <p class="skills-description intermediate"><span>AWS S3</span></p>
+              </div>
             </div>
-            <div class="skills-icon-bg intermediate slide-in-right">
-              <img class="skills-icon-img" src="./assets/firebase.png" width="60">
-              <p class="skills-description intermediate"><span>Firebase</span></p>
+            <div class = pop-up>
+              <div class="skills-icon-bg intermediate slide-in-right">
+                <img class="skills-icon-img" src="./assets/firebase.png" width="60">
+                <p class="skills-description intermediate"><span>Firebase</span></p>
+              </div>
             </div>
-            <div class="skills-icon-bg advanced slide-in-left">
-              <img class="skills-icon-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg"
-                width="50">
-              <p class="skills-description advanced"><span>C Language</span></p>
+            <div class = pop-up>
+              <div class="skills-icon-bg advanced slide-in-left">
+                <img class="skills-icon-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg"
+                  width="50">
+                <p class="skills-description advanced"><span>C Language</span></p>
+              </div>
             </div>
-            <div class="skills-icon-bg advanced slide-in-left">
-              <img class="skills-icon-img"
-                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg">
-              <p class="skills-description advanced"><span>Python</span></p>
+            <div class = pop-up>
+              <div class="skills-icon-bg advanced slide-in-left">
+                <img class="skills-icon-img"
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg">
+                <p class="skills-description advanced"><span>Python</span></p>
+              </div>
             </div>
-            <div class="skills-icon-bg intermediate fade-in">
-              <img class="skills-icon-img" src="https://www.r-project.org/Rlogo.png">
-              <p class="skills-description intermediate"><span>R</span></p>
+            <div class = pop-up>
+              <div class="skills-icon-bg intermediate fade-in">
+                <img class="skills-icon-img" src="https://www.r-project.org/Rlogo.png">
+                <p class="skills-description intermediate"><span>R</span></p>
+              </div>
             </div>
-            <div class="skills-icon-bg intermediate slide-in-right">
-              <img class="skills-icon-img"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="50">
-              <p class="skills-description intermediate"><span>HTML/CSS</span></p>
+            <div class = pop-up>
+              <div class="skills-icon-bg intermediate slide-in-right">
+                <img class="skills-icon-img"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="50">
+                <p class="skills-description intermediate"><span>HTML/CSS</span></p>
+              </div>
             </div>
-            <div class="skills-icon-bg advanced slide-in-right">
-              <img class="skills-icon-img" src="./assets/git.png">
-              <p class="skills-description advanced"><span>Git</span></p>
+            <div class = pop-up>
+              <div class="skills-icon-bg advanced slide-in-right">
+                <img class="skills-icon-img" src="./assets/git.png">
+                <p class="skills-description advanced"><span>Git</span></p>
+              </div>
             </div>
           </div>
-        </div>
         </div>
       </div>
       <div id="experience" class="">
@@ -246,8 +268,8 @@
         <div class="section-title-div fade-in">
           <h2 class="portfolio-section-title text-align-center">Projects</h2>
         </div>
-        <div id="main-projects" class="">
-          <div class="project-div container slide-in-left pop-up" id="project1">
+        <div id="main-projects">
+          <div class="project-div container slide-in-left pop-up2" id="project1">
             <div class="project-title-div">
               <a href="https://andr3wv.github.io/wander/" target="_blank"> <i
                 class="project-github fa-solid fa-file"></i>
@@ -265,7 +287,7 @@
               <p>REST API</p>
             </div>
           </div>
-          <div class="project-div container slide-in-right pop-up" id="project1">
+          <div class="project-div container slide-in-right pop-up2" id="project1">
             <div class="project-title-div">
               <a target="_blank" href="https://github.com/andr3wV/words_with_friends_solver" target="_blank"><i
                   class="project-github fa-brands fa-github"></i></a>
@@ -281,7 +303,7 @@
               <p>Algorithms</p>
             </div>
           </div>
-          <div class="project-div container slide-in-left pop-up" id="project-2">
+          <div class="project-div container slide-in-left pop-up2" id="project-2">
             <div class="project-title-div">
               <a target="_blank" href="https://github.com/andr3wV/summy" target="_blank"><i
                   class="project-github fa-brands fa-github"></i></a>
@@ -297,7 +319,7 @@
               <p>OpenAI API</p>
             </div>
           </div>
-          <div class="project-div container slide-in-right pop-up" id="project-3">
+          <div class="project-div container slide-in-right pop-up2" id="project-3">
             <div class="project-title-div">
               <a target="_blank" href="https://github.com/andr3wV/Amazon-Code-Bot" target="_blank"><i
                 class="project-github fa-brands fa-github"></i></a>
@@ -324,48 +346,55 @@
         </template>
       </div>
 
-      <div id="get-in-touch" class="footer-container">
-        <div class="section-title-div2 text-align-left">
-          <h2 class="portfolio-section-title">Get in Touch</h2>
-        </div>
-        <div class="content-wrapper">
-          <div class="left-content">
-            <p>I'm currently looking for internship opportunities in Winter or Summer of 2024.</p>
-            <p> Feel free to reach out to me via any of the channels below.</p>
-          </div>
-          <div class="right-content">
-            <div id="contact-links">
-              <div class="icon-column">
-                <div class="contact-item vertical">
-                  <a href="https://drive.google.com/uc?id=1KzwrLxIH8tzbU4kB_IvQhZT3h1z5scM5&export=download" download="AndrewVittiglio_resume" target="_blank">
-                    <i class="fa-solid fa-file slide-in-left pop-up"></i>
-                  </a>
-                </div>
-                <div class="contact-item vertical">
-                  <a href="https://www.linkedin.com/in/andr3wV" target="_blank">
-                    <i class="fa-brands fa-linkedin slide-in-left pop-up"></i>
-                  </a>
-                </div>
+      <div class="footer-container">
+        <div id="get-in-touch" class="footer">
+          <div class="left-content fade-in">
+            <div class="top-contents">
+              <div class="footer-header slide-in-left">
+                <h1>Get In Touch</h1><p>Available for Internship Winter 2023-2024</p>
               </div>
-              <div class="icon-column">
-                <div class="contact-item vertical">
-                  <a href="https://github.com/andr3wV" target="_blank">
-                    <i class="fa-brands fa-github slide-in-right pop-up"></i>
-                  </a>
-                </div>
-                <div class="contact-item vertical">
-                  <a href="mailto:avittig2@nd.edu">
-                    <i class="fa-regular fa-envelope-open slide-in-right pop-up"></i>
-                  </a>
-                </div>
+              <div class="caption slide-in-left">
+                <p style="opacity: 1; transform: none;">Have an exciting project or inquiry? Feel free to reach out!</p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="credits">
-          <p class="portfolio-footer">
-            <a class='source'></a>
-          </p>
+          <div class="right-content">
+            <div class="socials">
+              <div class="motion-div" style="opacity: 1; transform: none;">
+                <a class="anchor slide-in-right pop-up2" href="https://github.com/andr3wV" target="_blank" rel="noreferrer" tabindex="10">
+                  <div class="btn github">
+                    <p>github</p>
+                    <div class="decor github-decor"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="motion-div" style="opacity: 1; transform: none;">
+                <a class="motion-div slide-in-right pop-up2" href="https://drive.google.com/uc?id=1KzwrLxIH8tzbU4kB_IvQhZT3h1z5scM5&export=download" 
+                download="AndrewVittiglio_resume" target="_blank" rel="noreferrer" tabindex="11">
+                  <div class="btn insta">
+                    <p>resume</p>
+                    <div class="decor insta-decor"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="motion-div" style="opacity: 1; transform: none;">
+                <a class="anchor slide-in-right pop-up2" href="https://www.linkedin.com/in/andr3wV/" target="_blank" rel="noreferrer" tabindex="9">
+                  <div class="btn linkedin">
+                    <p>linkedin</p>
+                    <div class="decor linkedin-decor"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="motion-div" style="opacity: 1; transform: none;">
+                <a class="anchor slide-in-right pop-up2" href="mailto:andrewv433@gmail.com" target="_blank" rel="noreferrer" tabindex="8">
+                  <div class="btn email">
+                    <p>email</p>
+                    <div class="decor email-decor"></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       
@@ -463,7 +492,15 @@
     </script>
 
   </div> <!-- end of portofolio pages -->
-
+  <script>
+    window.addEventListener("scroll", function () {
+      const navBar = document.getElementById("nav-bar");
+      const fadeDistance = 200; // Change to determine the distance over which the fade happens
+      let opacity = 1 - window.scrollY / fadeDistance;
+      if (opacity < 0) opacity = 0;
+      navBar.style.opacity = opacity;
+    });
+  </script>
 </body>
 
 </html>
