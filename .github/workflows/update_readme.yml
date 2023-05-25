@@ -13,7 +13,7 @@ jobs:
     - name: Update README
       run: |
         DATE=$(git log -1 --format="%cd" --date=iso-strict)
-        DATE_TIME=$(date -d "$DATE" +"%b %e, %Y at %l:%M%p")
+        DATE_TIME=$(TZ=America/New_York date -d "$DATE" +"%b %e, %Y at %l:%M%p")
         sed -i "s/Last change: .*/Last change: $DATE_TIME/" README.md
     - name: Commit and push changes
       run: |
