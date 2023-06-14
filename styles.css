@@ -494,6 +494,7 @@ i.exp-github-link {
 }
 .project-title{
   font-size: 2.6vh;
+  color: var(--black);
 }
 .project-title-div {
   display: flex;
@@ -507,8 +508,13 @@ i.exp-github-link {
   font-size: 2.3vh;
   color: var(--white);
 }
+
 .project-link {
   color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 ul.project-description {
