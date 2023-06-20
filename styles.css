@@ -309,6 +309,7 @@ nav.nav-bar {
   justify-content: center;
   align-items: center;
   padding: 3vw;
+  margin-bottom: 20px;
 }
 
 #my-photo-div img {
@@ -464,100 +465,93 @@ i.exp-github-link {
 /*//////PROJECTS//////*/
 /*////////////////////*/
 
-#projects {
-  width: 100vw;
-  min-height: 100vh;
-  height: max-content;
+.project {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 60px;
 }
 
-#main-projects {
-  width: 100%;
-  height: 70%;
+.project-image {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.project-image img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 9%;
+  cursor: default;
+}
+
+.project-description {
+  flex: 1;
+  padding: 20px;
+  padding-right: 115px;
+  max-width: 100vw;
+  color: var(--white);
+}
+
+.project-description p {
+  margin-bottom: 20px; 
+}
+
+.project-description > div {
+  max-width: 10%;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: var(--white);
+}
+
+/* Flip the image and the description */
+.project-description-left {
+  flex: 1;
+  padding: 20px;
+  padding-left: 100px;
+  max-width: 100vw;
+  color: var(--white);
+}
+
+.project-description-left p {
+  margin-bottom: 20px; 
+}
+
+.project-image-right {
+  flex: 1;
+  padding: 20px;
+  padding-right: 10%;
+  text-align: center;
+}
+
+.project-image-right img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 9%;
+  cursor: default;
+}
+
+.button-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  padding-top: 8vh;
+  height: 15vh;
 }
 
-.project-div {
-  width: 40%;
-  min-height: 45vh;
-  max-height: max-content;
-  margin: 20px;
-  border-radius: 3%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.project-title{
-  font-size: 2.6vh;
-  color: var(--black);
-}
-.project-title-div {
-  display: flex;
-  padding: 3% 4% 0% 4%;
-}
-
-.project-github {
-  padding-right: 1vw;
-  position: relative;
-  top: 0.2vh;
-  font-size: 2.3vh;
-  color: var(--white);
-}
-
-.project-link {
-  color: var(--white);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-
-ul.project-description {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 3vh 3vw;
-  list-style: none;
-}
-
-ul.project-description>li {
-  padding-bottom: 1.5vh;
-  font-weight: 300;
-  font-size: 2vh;
-  color: var(--white);
-}
-
-div.project-skills {
-  display: flex;
-  justify-content: space-around;
-  font-size: 1.6vh;
-  font-weight: 700;
-  color: var(--black);
-  padding-bottom: 2vh;
-}
-
-#button-div {
-  width: 100%;
-  padding: 5vh 0 10vh 0;
-  display: flex;
-  justify-content: center;
-}
-
-#button-more-projects {
+.button-more-projects {
   width: 15vw;
   height: 6vh;
   border: none;
   border-radius: 100px;
-  cursor: pointer;
   background-color: var(--blurr);
   color: var(--white);
   font-size: 1.9vh;
   font-weight: 600;
+  align-items: center;
 }
 
 /*////////////////////////////////////*/
