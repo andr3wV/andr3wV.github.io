@@ -1,13 +1,11 @@
 /*GLOBAL STYLES*/
 
 :root {
-  --grey: #e0e0e0;
+  --grey: #CBCBCB;
   --blurr: rgba(255, 255, 255, 0.5);
-  --black: black;
+  --black: rgb(9,12,8);
   --white: white;
   --blue: #8B8BAE;
-
-
 }
 
 body {
@@ -92,7 +90,7 @@ img.icon {
 }
 
 .horizontal-menu-buttons a {
-  color: white;
+  color: var(--black);
   text-decoration: none;
 }
 
@@ -139,12 +137,11 @@ img {
   font-size: 11.5vw;
   text-align: center;
 }
-
 #tagline-div {
   min-height: 4vh;
   font-size: 3vh;
   font-weight: 300;
-  color: var(--white);
+  color: var(--black);
 }
 
 .name-and-description-wrapper {
@@ -164,11 +161,11 @@ h1.my-name {
   font-family: 'Sora', sans-serif;
   font-weight: 500;
   background-image: linear-gradient(-225deg,
-      white 10%,
-      hsl(252, 82%, 57%) 25%,
-      hsl(158, 82%, 57%) 50%,
-      hsl(252, 82%, 57%) 75%,
-      white 90%);
+      hsl(252, 82%, 57%) 10%,
+      hsl(158, 82%, 57%) 25%,
+      hsl(0,5%,92%) 50%,
+      hsl(158, 82%, 57%) 75%,
+      hsl(252, 82%, 57%) 90%);
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -275,7 +272,7 @@ nav.nav-bar {
 }
 
 .nav-link {
-  color: white;
+  color: var(--black);
   padding-right: 2vw;
   font-size: 2.5vh;
 }
@@ -283,8 +280,8 @@ nav.nav-bar {
 .logo-icon {
   background-image: url('assets/logo.png');
   background-size: contain;
-  width: 1.5em;
-  height: 1.5em;
+  width: 2em;
+  height: 2em;
   display: inline-block;
   font-size: 4.5em;
 }
@@ -305,7 +302,7 @@ nav.nav-bar {
   height: fit-content;
   width: 100vw;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -326,19 +323,30 @@ nav.nav-bar {
 #about-me-text > ul > li {
   font-size: 2.6vh;
   padding-bottom: 2vh;
-  color: var(--white);
+  color: var(--black);
 }
 
 #my-photo-div {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3vw;
+  padding: 2vw;
   margin-bottom: 20px;
 }
 
-#my-photo-div img {
-  border-radius: 15%;
+.profile-border {
+  flex-shrink: 0;
+  margin: 20px;
+  height: 25vw;
+  width: 25vw;
+  border: calc(8px + 0.2vw) solid transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-size: cover;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 50% 10%;
+  background-image: url(./assets/me.jpg), linear-gradient(to bottom left,  hsl(158, 82%, 57%, 85%), hsl(252, 82%, 57%));
 }
 
 /*///////////////////////*/
@@ -349,10 +357,12 @@ nav.nav-bar {
   width: 100vw;
   min-height: 45vh;
   max-height: max-content;
+  margin-bottom: 2rem;
 }
 
 #tools-skills>div>h2 {
   padding-left: 11%;
+  color: var(--white);
 }
 
 #skills-icons {
@@ -381,11 +391,11 @@ nav.nav-bar {
   padding: 15px 15px;
   width: 12vw;
   height: 4vh;
-  background-color: var(--blurr);
+  background-color: var(--grey);
   border-radius: 25px;
   cursor: pointer;
   font-size: 1.05vw;
-  color: var(--white); /* Set text color to black */
+  color: var(--black); /* Set text color to black */
 }
 
 img.skills-icon-img {
@@ -482,7 +492,54 @@ h2 {
   font-size: 1.9vh;
   font-weight: 600;
   align-items: center;
+  color: white;
 }
+
+#summy-border {
+	flex-shrink: 0;
+	margin: 20px;
+	height: 40vh;
+  width: 38vw;
+	border: calc(8px + 0.1vw) solid transparent;
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	background-size: cover;
+	box-sizing: border-box;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 40px;
+	background-image: url(./assets/summy.png), linear-gradient(hsl(158, 82%, 57%, 85%), hsl(252, 82%, 57%));
+} 
+
+#wwf-border {
+	flex-shrink: 0;
+	margin: 20px;
+	height: 44vh;
+  width: 38vw;
+	border: calc(8px + 0.1vw) solid transparent;
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	background-size: cover;
+	box-sizing: border-box;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 40px;
+	background-image: url(./assets/WWF.png), linear-gradient(hsl(158, 82%, 57%, 85%), hsl(252, 82%, 57%));
+} 
+
+#wander-border {
+	flex-shrink: 0;
+	margin: 20px;
+	height: 40vh;
+  width: 38vw;
+	border: calc(8px + 0.1vw) solid transparent;
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	background-size: cover;
+	box-sizing: border-box;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 40px;
+	background-image: url(./assets/wander.png), linear-gradient(hsl(158, 82%, 57%, 85%), hsl(252, 82%, 57%));
+} 
+
 
 /*////////////////////////////////////*/
 /*////////////GET IN TOUCH////////////*/
@@ -571,7 +628,7 @@ h2 {
   font-size: 1.5rem;
   font-weight: 500;
   z-index: 2;
-  color: white;
+  color: var(--white);
   margin: 0;
 }
 
@@ -719,24 +776,32 @@ h2 {
   --easing: cubic-bezier(0.8,0.2,0.2,0.8);
 
   position: fixed;
-  top: 0;
-  left: 0;
+  left: 25%;
   width: 50vw;
   height: 50vh;
-
+  margin-top: 25vh;
   z-index: 2;
-  filter: blur(calc(var(--size) / 5 ));
+  filter: blur(calc(var(--size) / 7 ));
   background-image: linear-gradient(hsl(158, 82%, 57%, 85%), hsl(252,82%, 57%));
   animation: rotate var(--speed) var(--easing) alternate infinite;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 
-.gradient-black-bg {
-  background-color: #222;
+.gradient-bg {
+
+  background-color: white;
+
   width: 100vw;
+  height: 100vh;
   position: fixed;
   z-index: -1;
-  height: 100vh;
+
+  transition: background 1s;
+}
+
+.gradient-bg-triggered {
+  transition: background 1s;
+  background-color: rgb(9, 12, 8);
 }
 
 .content {
@@ -759,4 +824,8 @@ svg {
 @keyframes rotate {
 	0%   { transform: rotate(0deg); }
 	100% { transform: rotate(360deg); }
+}
+
+.parallax-container {
+  position: relative;
 }
