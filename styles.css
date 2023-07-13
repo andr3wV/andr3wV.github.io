@@ -489,30 +489,53 @@ img.skills-icon-img {
   cursor: default;
 }
 
-.button-container {
+glow-button{
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 15vh;
+  padding: 20px 30px;
+  color: var(--black);
+  font-weight: bold;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+  margin: 3.5rem; 
+  min-width: 165px; /* makes view resume button wide enough to match download button */
+
 }
 
-.button-more-projects {
-  width: 15vw;
-  height: 8vh;
-  border: none;
-  border-radius: 50px;
-  background-image: linear-gradient(-225deg, hsl(158, 82%, 57%, 85%), hsl(252, 82%, 57%));  color: var(--white);
-  font-size: 1.9vh;
-  font-weight: 600;
-  align-items: center;
-  color: white;
+#view-res{
+}
+
+glow-button:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  background: linear-gradient(-225deg, hsl(158, 82%, 57%, 85%), hsl(252, 82%, 57%));
+  border-radius: inherit;
+  z-index: -1;
+  background-clip: padding-box;
+  box-sizing: border-box;
+}
+
+
+glow-button:hover{
+    background: linear-gradient(-225deg, hsl(158, 82%, 57%, 85%), hsl(252, 82%, 57%));
+    color: #050801;
+    box-shadow: 0 0 5px hsl(158, 82%, 57%, 85%),
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px hsl(252, 82%, 57%);
 }
 
 #summy-border {
 	flex-shrink: 0;
 	margin: 20px;
 	height: 40vh;
-  width: 38vw;
+  width: 40vw;
 	border: calc(8px + 0.1vw) solid transparent;
 	background-origin: border-box;
 	background-clip: content-box, border-box;
@@ -527,7 +550,7 @@ img.skills-icon-img {
 	flex-shrink: 0;
 	margin: 20px;
 	height: 44vh;
-  width: 38vw;
+  width: 40vw;
 	border: calc(8px + 0.1vw) solid transparent;
 	background-origin: border-box;
 	background-clip: content-box, border-box;
@@ -542,7 +565,7 @@ img.skills-icon-img {
 	flex-shrink: 0;
 	margin: 20px;
 	height: 40vh;
-  width: 38vw;
+  width: 40vw;
 	border: calc(8px + 0.1vw) solid transparent;
 	background-origin: border-box;
 	background-clip: content-box, border-box;
@@ -553,41 +576,12 @@ img.skills-icon-img {
 	background-image: url(./assets/wander.png), linear-gradient(hsl(158, 82%, 57%, 85%), hsl(252, 82%, 57%));
 } 
 
-.project-button-container{
+.button-container{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-
-.project-button {
-  width: 10vw;
-  height: 8vh;
-  border: none;
-  border-radius: 50px;
-  background-image: linear-gradient(-225deg, hsl(158, 82%, 57%, 85%), hsl(252, 82%, 57%));  color: var(--white);
-  font-size: 1.9vh;
-  font-weight: 600;
-  align-items: center;
-  color: white;
-  margin: 3.5rem; 
-  margin-top: 1rem;
-}
-
-.project-button-single {
-  width: 5%;
-  height: 8vh;
-  border: none;
-  border-radius: 50px;
-  background-image: linear-gradient(-225deg, hsl(158, 82%, 57%, 85%), hsl(252, 82%, 57%));  color: var(--white);
-  font-size: 1.9vh;
-  font-weight: 600;
-  align-items: center;
-  color: white;
-  margin-left: 3.5rem; 
-  margin-right: 3.5rem
-}
-
 
 /*////////////////////////////////////*/
 /*////////////GET IN TOUCH////////////*/
