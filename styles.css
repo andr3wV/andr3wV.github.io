@@ -205,16 +205,14 @@ a.in-line-link {
   display: inline;
 }
 
-.portfolio-section-title {
-  font-size: 3.4vh;
-  font-weight: 500;
-}
-
-.portfolio-section-title {
-  font-size: 3.4vh;
+.section-title {
+  font-size: 3.7vh;
   font-weight: 500;
   color: var(--white);
+}
 
+#companies{
+  color: var(--black);
 }
 
 .subtitle {
@@ -502,9 +500,6 @@ glow-button{
   margin: 3.5rem; 
   min-width: 165px; /* makes view resume button wide enough to match download button */
 
-}
-
-#view-res{
 }
 
 glow-button:before {
@@ -870,4 +865,28 @@ svg {
 
 .parallax-container {
   position: relative;
+}
+
+
+/*////////////////////*/
+/*//////COMPANIES/////*/
+/*////////////////////*/
+
+.companies-container{
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.companies-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.companies-item img {
+  width: 60%;
+  height: auto;
 }
