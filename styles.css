@@ -58,7 +58,7 @@ img.icon {
 
 .gradient-text {
   background-image: linear-gradient(-225deg, hsl(158, 82%, 57%, 85%), hsl(252, 82%, 57%));
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
