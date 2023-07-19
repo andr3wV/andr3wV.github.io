@@ -488,6 +488,7 @@ img.skills-icon-img {
 }
 
 glow-button{
+  position: relative;
   display: flex;
   justify-content: center;
   padding: 20px 30px;
@@ -499,7 +500,6 @@ glow-button{
   cursor: pointer;
   margin: 3.5rem; 
   min-width: 165px; /* makes view resume button wide enough to match download button */
-
 }
 
 glow-button:before {
@@ -576,6 +576,7 @@ glow-button:hover{
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
 }
 
 /*////////////////////////////////////*/
