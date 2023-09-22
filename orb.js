@@ -42,6 +42,7 @@ function Line(x, y) {
   this.width = 2;
   this.definePoints();
   this.draw();
+  this.startTime = new Date().getTime(); // capture the creation time
 }
 
 function easeInOutCubic(currentIteration, startValue, changeInValue, totalIterations) {
@@ -70,6 +71,11 @@ Line.prototype.move = function() {
     this.c2Dir *= -1;
     this.c2ChangeFreq = Math.floor(Math.random() * 200) + 1;
   }
+  var currentTime = new Date().getTime();
+  var elapsed = currentTime - this.startTime;
+  var alpha = Math.sin(elapsed / 1000 * Math.PI);  // Calculate alpha between 0 and 1, 4000 ms (or 4 sec) for a full cycle
+
+  if (alpha < 0) alpha = 0; // clip the lower bound
 
   this.c1Angle = this.c1Angle + this.c1Dir * this.c1Speed;
   this.c2Angle = this.c2Angle + this.c2Dir * this.c2Speed;
