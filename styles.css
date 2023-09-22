@@ -885,9 +885,13 @@ svg {
 }
 
 .parallax-container {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw; /* Viewport Width */
+  height: 100vh; /* Viewport Height */
+  overflow: hidden;
 }
-
 
 /*////////////////////*/
 /*//////COMPANIES/////*/
@@ -910,4 +914,43 @@ svg {
 .companies-item img {
   width: 60%;
   height: auto;
+}
+
+/*////////////////////*/
+/*////////ORB/////////*/
+/*////////////////////*/
+
+.opa {
+  animation: flickr 6s ease-in-out infinite;
+  animation-fill-mode: both;
+}
+
+canvas {
+  animation: floatting 10s ease-in-out infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes floatting {
+  0%,
+  100% {
+    transform: translate3d(0, -5px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+
+@keyframes flickr {
+  0%,
+  100% {
+    opacity: 1;
+    transform: translate3d(-5px, 0px, 0);
+  }
+  25%,75% {
+     opacity: 1;
+  }
+  50% {
+    opacity: .5;
+    transform: translate3d(5px, 0px, 0);
+  }
 }
