@@ -14,7 +14,7 @@ canvas.setAttribute("height", HEIGHT);
 var
   body,
   lines = [],
-  totalTentacles = 200;
+  totalTentacles = 60;
 
 function Line(x, y) {
   this.x = WIDTH/2;
@@ -132,3 +132,18 @@ function animate() {
   }
   requestAnimationFrame(animate);
 }
+
+// let lastRenderTime = Date.now();
+// const renderInterval = 50; // Time in milliseconds
+
+// function animate() {
+//     let currentTime = Date.now();
+//     if (currentTime - lastRenderTime >= renderInterval) {
+//         ctx.clearRect(0, 0, WIDTH, HEIGHT);
+//         for (var i in lines) {
+//             lines[i].move();
+//         }
+//         lastRenderTime = currentTime;
+//     }
+//     requestAnimationFrame(animate);
+// }
